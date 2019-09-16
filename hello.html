@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		print = function(msg){
+			return function(){
+				console.log(msg);
+			}
+		}
+		counterTimer = function(source, count){
+			for (var i = 0; i < count; i++)
+    		setTimeout(print(source + ":"+ i +" secords over since click"), i*1000);
+		}
+	</script>
+<form >
+	<input type="" name="" value="Vivek"><br/>
+	<input type="" name="" value="Happy"><br/>
+	<input type="button" name="" onclick="counterTimer('B1',10)" value="B1"><br/>
+	<input type="button" name="" onclick="counterTimer('B2',16)"  value="B2">
+</form>
+</body>
+</html>
